@@ -125,7 +125,6 @@ export default async function SolutionPage({ params }) {
         <SolutionPortfolio categoryName={data.title} />
         <GovCorpCTA />
         <Footer />
-        <TawkToChat />
       </main>
     );
   }
@@ -146,7 +145,6 @@ export default async function SolutionPage({ params }) {
         <SolutionPortfolio categoryName={data.title} />
         <CampusCTA />
         <Footer />
-        <TawkToChat />
       </main>
     );
   }
@@ -167,7 +165,6 @@ export default async function SolutionPage({ params }) {
         <SolutionPortfolio categoryName={data.title} />
         <CreativeCTA />
         <Footer />
-        <TawkToChat />
       </main>
     );
   }
@@ -188,7 +185,6 @@ export default async function SolutionPage({ params }) {
         <SolutionPortfolio categoryName={data.title} />
         <ConcertCTA />
         <Footer />
-        <TawkToChat />
       </main>
     );
   }
@@ -209,7 +205,6 @@ export default async function SolutionPage({ params }) {
         <SolutionPortfolio categoryName={data.title} />
         <MultimediaCTA />
         <Footer />
-        <TawkToChat />
       </main>
     );
   }
@@ -230,7 +225,6 @@ export default async function SolutionPage({ params }) {
         <SolutionPortfolio categoryName={data.title} />
         <ExhibitionCTA />
         <Footer />
-        <TawkToChat />
       </main>
     );
   }
