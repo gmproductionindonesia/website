@@ -26,7 +26,7 @@ export default function CareerCulture() {
     <section id="culture" className="py-24 bg-zinc-900 relative border-t border-white/5">
       <div className="container mx-auto px-6 md:px-12 lg:px-16">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -34,14 +34,14 @@ export default function CareerCulture() {
           >
             Bekerja dari <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Hati</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-gray-400 text-lg md:text-xl font-light"
           >
-            Sebagai "GM Team", DNA ini kami terapkan sehari-hari dalam setiap proses perencanaan hingga eksekusi panggung.
+            Sebagai "GM Team", DNA ini kami terapkan sehari-hari dalam setiap proses perencanaan hingga eksekusi Event.
           </motion.p>
         </div>
 

@@ -2,6 +2,7 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import TawkToChat from "@/components/ui/TawkToChat";
 import PortfolioHero from "@/components/sections/portfolio/PortfolioHero";
+import PortfolioVideo from "@/components/sections/portfolio/PortfolioVideo";
 import PortfolioGallery from "@/components/sections/portfolio/PortfolioGallery";
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function PortfolioPage() {
     <main className="bg-black min-h-screen">
       <Navbar />
       <PortfolioHero />
+      <PortfolioVideo />
       <PortfolioGallery />
       <Footer />
       <TawkToChat />

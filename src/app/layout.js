@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -21,25 +22,54 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id" className={`${inter.variable} scroll-smooth`}>
       <head>
-        {/* Tawk.to Script Placeholder */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/65abc1234567890abcdef123/1h1a2b3c4'; /* Ganti dengan Property ID Tawk.to Anda */
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-              })();
-            `,
-          }}
+        {/* Start of SleekFlow Embed Code */}
+        <Script
+          src="https://slceasprodbe932739.z7.web.core.windows.net/widget.js"
+          data-companyid="f7a52be7-02af-4bfa-8828-193dc5b89687"
+          data-location="southeastasia"
+          data-widgetid="78fd3860-1b0a-46b2-9112-21cff4a91124"
+          type="module"
+          strategy="lazyOnload"
         />
+        {/* End of SleekFlow Embed Code */}
       </head>
       <body className="antialiased min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white flex flex-col">
         {children}
+        <Script
+          id="sleekflow-click-handler"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof window !== 'undefined') {
+                document.addEventListener('click', function(e) {
+                  const target = e.target.closest('a[href="#live-chat"]');
+                  if (target) {
+                    e.preventDefault();
+                    // Attempt to open SleekFlow widget using common API or trigger button
+                    if (window.SleekFlow && typeof window.SleekFlow.open === 'function') {
+                      window.SleekFlow.open();
+                    } else if (window.sleekflow && typeof window.sleekflow.open === 'function') {
+                      window.sleekflow.open();
+                    } else {
+                      // Attempt to click the widget button if API is unavailable
+                      const widgetBtn = document.querySelector('.sleekflow-launcher, #sleekflow-widget, iframe[src*="sleekflow"]');
+                      if (widgetBtn) {
+                        widgetBtn.click();
+                        // Also try posting message if it's an iframe
+                        if (widgetBtn.tagName === 'IFRAME') {
+                          widgetBtn.contentWindow.postMessage('open', '*');
+                        }
+                      } else {
+                        // Fallback alert
+                        alert("Widget Live Chat sedang memuat atau terblokir. Silakan pastikan widget muncul di pojok kanan bawah.");
+                      }
+                    }
+                  }
+                });
+              }
+            `
+          }}
+        />
       </body>
     </html>
   );

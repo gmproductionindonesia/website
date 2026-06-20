@@ -10,7 +10,7 @@ export default function AboutCoverage() {
           src="/images/indonesia1.png"
           alt="GM Production Coverage Map"
           fill
-          className="object-contain object-center scale-[1.15]"
+          className="object-contain object-center scale-105"
           sizes="100vw"
         />
       </div>

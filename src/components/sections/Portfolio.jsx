@@ -9,37 +9,37 @@ export default function Portfolio() {
       id: 1, 
       title: "Government &\nCorporate Event", 
       desc: "Conference International yang melibatkan koordinasi operasional kompleks serta audience berskala nasional.", 
-      img: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      img: "/images/goverment/3.jpg" 
     },
     { 
       id: 2, 
       title: "Campus &\nInstitutional Event", 
       desc: "Seminar Nasional yang dirancang untuk menghadirkan pengalaman yang terorganisir dan berkesan.", 
-      img: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      img: "/images/campus-institutional/1.jpg" 
     },
     { 
       id: 3, 
       title: "Creative &\nShow Management", 
       desc: "Pengembangan konsep kreatif, pengaturan show flow, dan pengelolaan jalannya acara untuk menciptakan pengalaman audience yang lebih engaging.", 
-      img: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      img: "/images/creative/1.jpg" 
     },
     { 
       id: 4, 
       title: "Concert & Entertainment\nProduction", 
       desc: "Entertainment event dengan dukungan stage management, artist coordination, dan crowd experience yang optimal.", 
-      img: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      img: "/images/entertainment/6.JPG" 
     },
     { 
       id: 5, 
       title: "Multimedia &\nTechnical Production", 
       desc: "Implementasi multimedia dan technical production untuk mendukung kualitas visual, audio, dan operasional event secara menyeluruh.", 
-      img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      img: "/images/multimedia/1.JPG" 
     },
     { 
       id: 6, 
       title: "Exhibition &\nBrand Activation", 
       desc: "Activation event yang membantu brand membangun interaksi langsung dengan audience melalui pengalaman yang lebih immersive.", 
-      img: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      img: "/images/exhibition/1.JPG" 
     },
   ];
 

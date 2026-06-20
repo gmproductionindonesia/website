@@ -11,7 +11,7 @@ export default function MultimediaCTA() {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop")',
+          backgroundImage: 'url("/images/multimedia/2.JPG")',
         }}
       >
         <div className="absolute inset-0 bg-white/95 backdrop-blur-[1px]"></div>
@@ -37,7 +37,7 @@ export default function MultimediaCTA() {
           </p>
 
           <Link 
-            href="#contact"
+            href="#live-chat"
             className="inline-flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-xl shadow-slate-900/20 hover:-translate-y-1 group"
           >
             Hubungi Kami

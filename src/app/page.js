@@ -3,6 +3,7 @@ import Footer from "@/components/ui/Footer";
 import TawkToChat from "@/components/ui/TawkToChat";
 import Hero from "@/components/sections/Hero";
 import AnimatedStats from "@/components/ui/AnimatedStats";
+import ClientMarquee from "@/components/sections/ClientMarquee";
 import EoValue from "@/components/sections/EoValue";
 import Features from "@/components/sections/Features";
 import IsoCertified from "@/components/sections/IsoCertified";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AnimatedStats className="relative z-20" />
+      <ClientMarquee />
       <EoValue />
       <Features />
       <IsoCertified />

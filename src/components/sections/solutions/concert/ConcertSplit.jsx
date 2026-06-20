@@ -17,7 +17,7 @@ export default function ConcertSplit() {
             className="w-full lg:w-1/2"
           >
             <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1540039155732-611174bf25c0?q=80&w=2070&auto=format&fit=crop")' }}></div>
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/images/entertainment/6.JPG")' }}></div>
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-50"></div>
               
               {/* Decorative Elements */}
@@ -37,7 +37,7 @@ export default function ConcertSplit() {
             <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
               Concert & Entertainment Production
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-8 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-8 tracking-tight">
               Entertainment Event yang Besar Membutuhkan <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Produksi yang Presisi</span>
             </h2>
             

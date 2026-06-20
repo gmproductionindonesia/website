@@ -17,7 +17,7 @@ export default function CreativeSplit() {
             className="w-full lg:w-1/2"
           >
             <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1974&auto=format&fit=crop")' }}></div>
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/images/creative/1.jpg")' }}></div>
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-80"></div>
               
               {/* Decorative Elements */}

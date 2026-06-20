@@ -105,7 +105,7 @@ export default function SingleNewsPage({ params }) {
           <div className="mt-20 p-8 md:p-12 rounded-3xl bg-gradient-to-br from-emerald-900/30 to-[#020202] border border-emerald-500/20 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Konsultasikan Event Nasional Anda</h3>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto font-light text-lg">Jangan biarkan acara besar Anda gagal karena vendor yang salah. Diskusikan RAB dan kebutuhan teknis Anda bersama pakar kami secara gratis.</p>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="inline-flex px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-full transition-all shadow-lg shadow-emerald-500/20">
+            <a href="#live-chat" target="_blank" rel="noopener noreferrer" className="inline-flex px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-full transition-all shadow-lg shadow-emerald-500/20">
               Hubungi Tim Ahli GM
             </a>
           </div>

@@ -17,7 +17,7 @@ export default function CampusSplit() {
             className="w-full lg:w-1/2"
           >
             <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop")' }}></div>
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/images/campus-institutional/1.jpg")' }}></div>
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
               
               {/* Decorative Elements */}

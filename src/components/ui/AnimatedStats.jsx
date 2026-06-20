@@ -30,7 +30,7 @@ export default function AnimatedStats({ className = "" }) {
     },
     {
       icon: <Building2 className="text-orange-500 w-7 h-7" />,
-      number: 2000,
+      number: 5000,
       suffix: "+",
       label: "EVENTS"
     },

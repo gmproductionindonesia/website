@@ -11,7 +11,7 @@ export default function CampusCTA() {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop")',
+          backgroundImage: 'url("/images/campus-institutional/2.JPG")',
         }}
       >
         <div className="absolute inset-0 bg-slate-900/90"></div>
@@ -37,7 +37,7 @@ export default function CampusCTA() {
           </p>
 
           <Link 
-            href="#contact"
+            href="#live-chat"
             className="inline-flex items-center justify-center gap-3 bg-[#C69C6D] hover:bg-[#b08b61] text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg group"
           >
             Hubungi Kami

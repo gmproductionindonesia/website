@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function GovCorpStats() {
   const stats = [
     { value: "25+", label: "YEARS EXPERIENCE" },
-    { value: "2000+", label: "EVENT" },
+    { value: "5000+", label: "EVENT" },
     { value: "500+", label: "CLIENT & PARTNER" },
     { value: "Nationwide", label: "COVERAGE" },
   ];

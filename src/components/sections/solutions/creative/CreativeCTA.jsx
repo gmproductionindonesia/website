@@ -11,7 +11,7 @@ export default function CreativeCTA() {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1974&auto=format&fit=crop")',
+          backgroundImage: 'url("/images/creative/2.JPG")',
         }}
       >
         <div className="absolute inset-0 bg-slate-900/90"></div>
@@ -37,7 +37,7 @@ export default function CreativeCTA() {
           </p>
 
           <Link 
-            href="#contact"
+            href="#live-chat"
             className="inline-flex items-center justify-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-[0_0_20px_rgba(249,115,22,0.3)] group"
           >
             Hubungi Kami

@@ -9,7 +9,7 @@ export default function CareerHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2000&auto=format&fit=crop"
+          src="/images/career_team_indo.png"
           alt="Career at GM Production"
           fill
           className="object-cover object-center"

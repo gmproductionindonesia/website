@@ -1,53 +1,107 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+
+const images = [
+  "/images/entertainment/1.JPG",
+  "/images/entertainment/2.jpg",
+  "/images/entertainment/3.jpg",
+  "/images/entertainment/4.jpg",
+  "/images/entertainment/5.jpg",
+  "/images/entertainment/6.JPG",
+  "/images/entertainment/7.JPG"
+];
 
 export default function ConcertHero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  }, []);
+
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [nextSlide]);
+
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-24 pb-20 overflow-hidden">
-      {/* Background Image with modern bright overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=2070&auto=format&fit=crop")',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/40 backdrop-blur-[2px]"></div>
+    <section className="relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden">
+      {/* Background Image Slider with modern dark overlay */}
+      <div className="absolute inset-0 z-0">
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={images[currentIndex]}
+              alt={`Concert slide ${currentIndex + 1}`}
+              fill
+              priority
+              className="object-cover"
+            />
+          </motion.div>
+        </AnimatePresence>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
       </div>
 
-      <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
+      <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-16 max-w-7xl mt-12">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-3 mb-6">
-              <div className="w-12 h-[2px] bg-orange-500"></div>
-              <span className="text-orange-600 font-black tracking-[0.2em] uppercase text-sm">
-                Concert & Entertainment Production Solutions
-              </span>
-            </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-tight mb-8 tracking-tight">
-              Produksi Konser & Entertainment Event dengan Pengalaman yang Lebih <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Immersive dan Profesional</span>
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-black text-white leading-[1.15] mb-8 tracking-tight">
+              Bukan Sekedar Konser & Entertainment, Namun Pengalaman yang Lebih <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">Immersive dan Berkesan</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-600 font-medium mb-10 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-300 font-medium mb-10 max-w-2xl leading-relaxed">
               GM Production membantu menghadirkan konser, festival, dan entertainment event dengan perencanaan produksi yang matang, technical execution yang presisi, serta pengalaman audience yang lebih impactful dan memorable.
             </p>
 
             <Link 
-              href="#contact"
-              className="inline-flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-xl shadow-slate-900/20 hover:-translate-y-1 group"
+              href="#live-chat"
+              className="inline-flex items-center justify-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-xl shadow-orange-900/20 hover:-translate-y-1 group"
             >
               Konsultasi Sekarang
               <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
         </div>
+      </div>
+
+      {/* Slider Controls */}
+      <div className="absolute inset-0 z-20 flex items-center justify-between px-4 md:px-8 pointer-events-none">
+        <button 
+          onClick={prevSlide}
+          className="p-3 rounded-full bg-white/10 hover:bg-orange-500 text-white border border-white/20 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+          aria-label="Previous image"
+        >
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        <button 
+          onClick={nextSlide}
+          className="p-3 rounded-full bg-white/10 hover:bg-orange-500 text-white border border-white/20 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+          aria-label="Next image"
+        >
+          <ChevronRight className="w-6 h-6" />
+        </button>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ export default function ConcertFeaturesBar() {
   ];
 
   return (
-    <section className="bg-white border-y border-slate-200 py-6 relative z-30 shadow-sm">
+    <section className="bg-white border-y border-slate-200 pt-7 pb-5 relative z-30 shadow-sm">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex flex-col md:flex-row items-center justify-center divide-y md:divide-y-0 md:divide-x divide-slate-200">
           {features.map((feature, idx) => (

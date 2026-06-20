@@ -28,7 +28,7 @@ export default function GovCorpCTA() {
             </p>
 
             <Link 
-              href="#contact"
+              href="#live-chat"
               className="inline-flex items-center justify-center bg-[#C69C6D] hover:bg-[#b08b61] text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-lg hover:-translate-y-1"
             >
               Hubungi Tim Produksi Kami

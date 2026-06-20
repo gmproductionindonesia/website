@@ -17,7 +17,7 @@ export default function ExhibitionSplit() {
             className="w-full lg:w-1/2"
           >
             <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=2070&auto=format&fit=crop")' }}></div>
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/images/exhibition/1.JPG")' }}></div>
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent opacity-50"></div>
               
               {/* Decorative Elements */}

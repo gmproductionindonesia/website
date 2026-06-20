@@ -20,7 +20,7 @@ export default function SolutionPortfolio({ categoryName }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <h2 className="text-3xl font-bold text-white tracking-tight">
-              Related Case Studies
+              Related Events
             </h2>
             <div className="h-1 w-20 bg-orange-500 mt-4 rounded-full"></div>
           </div>

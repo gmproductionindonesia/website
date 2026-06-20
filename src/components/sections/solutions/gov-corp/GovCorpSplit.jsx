@@ -19,7 +19,7 @@ export default function GovCorpSplit() {
           >
             <div className="relative h-[500px] w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2000&auto=format&fit=crop"
+                src="/images/goverment/1.JPG"
                 alt="Professional Event Execution"
                 fill
                 className="object-cover"

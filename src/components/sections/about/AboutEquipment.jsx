@@ -9,7 +9,7 @@ export default function AboutEquipment() {
       {/* Full-width Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2000&auto=format&fit=crop"
+          src="/images/equipment.JPG"
           alt="Production Equipment"
           fill
           className="object-cover object-center opacity-60"
@@ -25,9 +25,9 @@ export default function AboutEquipment() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-[#3f6460]/95 backdrop-blur-sm max-w-xl md:max-w-2xl rounded-[40px] p-8 md:p-12 lg:p-14 shadow-2xl"
+          className="bg-[#3f6460]/95 backdrop-blur-sm max-w-lg md:max-w-xl rounded-[32px] p-6 md:p-10 lg:p-12 shadow-2xl"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight tracking-wide">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-8 leading-tight tracking-wide">
             THE POWER OF EQUIPMENT IN EVENT SUCCESS
           </h2>
           
