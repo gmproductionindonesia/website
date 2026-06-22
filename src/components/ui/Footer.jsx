@@ -13,9 +13,9 @@ export default function Footer() {
               <Image 
                 src="/images/logo-gm.png" 
                 alt="GM Production Logo" 
-                width={240} 
-                height={80} 
-                className="h-12 w-auto object-contain brightness-0 invert" 
+                width={1024} 
+                height={807} 
+                className="h-12 md:h-14 w-auto object-contain brightness-0 invert" 
               />
             </div>
             <p className="mb-6 leading-relaxed">

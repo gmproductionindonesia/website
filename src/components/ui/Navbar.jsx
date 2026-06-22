@@ -56,9 +56,9 @@ export default function Navbar() {
           <Image 
             src="/images/logo-gm.png" 
             alt="GM Production Logo" 
-            width={240} 
-            height={80} 
-            className="w-36 md:w-44 h-auto object-contain" 
+            width={1024} 
+            height={807} 
+            className="h-10 md:h-12 w-auto object-contain" 
             priority
           />
         </Link>
