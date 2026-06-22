@@ -23,25 +23,25 @@ function AnimatedNumber({ value }) {
 export default function AnimatedStats({ className = "" }) {
   const stats = [
     {
-      icon: <CalendarDays className="text-orange-500 w-7 h-7" />,
+      icon: <CalendarDays className="text-[#c29b62] w-7 h-7" />,
       number: 25,
       suffix: "+",
       label: "YEARS EXPERIENCE"
     },
     {
-      icon: <Building2 className="text-orange-500 w-7 h-7" />,
+      icon: <Building2 className="text-[#c29b62] w-7 h-7" />,
       number: 5000,
       suffix: "+",
       label: "EVENTS"
     },
     {
-      icon: <Users className="text-orange-500 w-7 h-7" />,
+      icon: <Users className="text-[#c29b62] w-7 h-7" />,
       number: 500,
       suffix: "+",
       label: "CLIENTS"
     },
     {
-      icon: <Globe className="text-orange-500 w-7 h-7" />,
+      icon: <Globe className="text-[#c29b62] w-7 h-7" />,
       number: null,
       text: "Nationwide",
       label: "COVERAGE"

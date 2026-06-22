@@ -30,7 +30,7 @@ export default function ConcertDeliverables() {
     <section className="py-24 bg-white border-t border-slate-100">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="max-w-4xl mb-16">
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             What We Deliver
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
@@ -49,9 +49,9 @@ export default function ConcertDeliverables() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="p-8 md:p-10 bg-[#F8FAFC] border border-slate-200 rounded-3xl hover:bg-white hover:border-orange-300 hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300 group"
+              className="p-8 md:p-10 bg-[#F8FAFC] border border-slate-200 rounded-3xl hover:bg-white hover:border-orange-300 hover:shadow-xl hover:shadow-[#c29b62]/10 transition-all duration-300 group"
             >
-              <div className="w-8 h-1.5 rounded-full bg-slate-300 mb-8 group-hover:bg-orange-500 group-hover:w-16 transition-all duration-300"></div>
+              <div className="w-8 h-1.5 rounded-full bg-slate-300 mb-8 group-hover:bg-[#c29b62] group-hover:w-16 transition-all duration-300"></div>
               <h3 className="text-lg font-black text-slate-900 mb-4 leading-snug tracking-tight">
                 {item.title}
               </h3>

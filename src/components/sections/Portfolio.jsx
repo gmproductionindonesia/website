@@ -73,7 +73,7 @@ export default function Portfolio() {
           </div>
           
           <motion.a 
-            href="#"
+            href="#live-chat"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

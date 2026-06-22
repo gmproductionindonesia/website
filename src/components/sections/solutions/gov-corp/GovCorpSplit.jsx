@@ -27,7 +27,7 @@ export default function GovCorpSplit() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             {/* Decorative border matching the old screenshot style but modern */}
-            <div className="absolute -bottom-6 -right-6 w-3/4 h-3/4 border-b-2 border-r-2 border-orange-500 rounded-br-3xl -z-10"></div>
+            <div className="absolute -bottom-6 -right-6 w-3/4 h-3/4 border-b-2 border-r-2 border-[#c29b62] rounded-br-3xl -z-10"></div>
           </motion.div>
 
           {/* Content Side */}
@@ -37,7 +37,7 @@ export default function GovCorpSplit() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-orange-500 text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
+            <span className="text-[#c29b62] text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
               Government & Corporate Event
             </span>
             <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-8">

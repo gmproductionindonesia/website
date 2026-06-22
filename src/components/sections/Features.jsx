@@ -8,28 +8,33 @@ export default function Features() {
     {
       title: "Berpengalaman & Terpercaya",
       description: "Lebih dari 25 tahun jam terbang menangani berbagai skala event dari korporat hingga instansi pemerintah.",
-      icon: <Award size={32} className="text-orange-500" />
+      icon: <Award size={32} className="text-[#c29b62]" />
     },
     {
       title: "Fast Response",
       description: "Tim support kami selalu siaga memberikan respons cepat untuk setiap kebutuhan mendadak Anda.",
-      icon: <Zap size={32} className="text-orange-500" />
+      icon: <Zap size={32} className="text-[#c29b62]" />
     },
     {
       title: "Tim Creative Profesional",
       description: "Ide-ide segar dan out of the box dari tim kreatif kami siap membuat event Anda berkesan dan unik.",
-      icon: <Lightbulb size={32} className="text-orange-500" />
+      icon: <Lightbulb size={32} className="text-[#c29b62]" />
     },
     {
       title: "End-to-End Event Production Partner",
       description: "Hadir sebagai one-stop solution terintegrasi dengan in-house equipment, show management, tim profesional, serta gudang produksi dan dekorasi mandiri demi kelancaran eksekusi event Anda tanpa batas.",
-      icon: <Layers size={32} className="text-orange-500" />
+      icon: <Layers size={32} className="text-[#c29b62]" />
     }
   ];
 
   return (
-    <section id="features" className="py-24 bg-slate-50 dark:bg-slate-900/50">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+    <section 
+      id="features" 
+      className="py-24 relative bg-cover bg-center bg-no-repeat bg-fixed"
+      style={{ backgroundImage: "url('/images/DSC07318.JPG')" }}
+    >
+      <div className="absolute inset-0 bg-black/70 z-0"></div>
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
 
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2
@@ -37,7 +42,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white"
+            className="text-3xl md:text-4xl font-bold mb-4 text-white"
           >
             Mengapa GM Production Indonesia?
           </motion.h2>
@@ -46,7 +51,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-slate-600 dark:text-slate-400 text-lg"
+            className="text-white/80 text-lg"
           >
             Alasan mengapa ratusan klien mempercayakan kesuksesan event mereka kepada kami.
           </motion.p>
@@ -62,7 +67,7 @@ export default function Features() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-slate-100 dark:border-slate-700"
             >
-              <div className="w-16 h-16 rounded-xl bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center mb-6">
+              <div className="w-16 h-16 rounded-xl bg-[#c29b62]/10 dark:bg-[#c29b62]/10 flex items-center justify-center mb-6">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">{feature.title}</h3>

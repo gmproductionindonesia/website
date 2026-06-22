@@ -52,7 +52,7 @@ export default function CreativeServices() {
     <section className="py-24 bg-[#FDF8EE] border-t border-slate-200">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="text-center mb-16">
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             What We Handle
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
@@ -68,10 +68,10 @@ export default function CreativeServices() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className={`bg-white rounded-[2rem] p-8 md:p-10 border ${idx === 2 ? 'border-orange-400' : 'border-slate-200'} shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden`}
+              className={`bg-white rounded-[2rem] p-8 md:p-10 border ${idx === 2 ? 'border-[#c29b62]' : 'border-slate-200'} shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden`}
             >
               {idx === 2 && (
-                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-bl-[100px] -z-0"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#c29b62]/10 rounded-bl-[100px] -z-0"></div>
               )}
               
               <div className="relative z-10">
@@ -90,7 +90,7 @@ export default function CreativeServices() {
                 <ul className="space-y-4">
                   {service.list.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2 shrink-0 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></div>
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#c29b62] mt-2 shrink-0 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></div>
                       <span className="text-slate-700 text-sm font-medium">{item}</span>
                     </li>
                   ))}

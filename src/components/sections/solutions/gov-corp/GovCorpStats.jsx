@@ -14,7 +14,7 @@ export default function GovCorpStats() {
     <section className="py-24 bg-[#FDF8EE] relative z-20">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="text-center mb-16">
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             Event Statistics
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">

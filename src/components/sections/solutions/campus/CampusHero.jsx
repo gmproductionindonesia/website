@@ -65,7 +65,7 @@ export default function CampusHero() {
           >
 
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-black text-white leading-[1.15] mb-8 tracking-tight">
-              Solusi Event Profesional untuk Kampus dan <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-500">Institusi Pendidikan</span>
+              Solusi Event Profesional untuk Kampus dan <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-[#c29b62]">Institusi Pendidikan</span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-300 font-light mb-10 max-w-2xl leading-relaxed">
@@ -87,14 +87,14 @@ export default function CampusHero() {
       <div className="absolute inset-0 z-20 flex items-center justify-between px-4 md:px-8 pointer-events-none">
         <button 
           onClick={prevSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-orange-500 text-white border border-white/20 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+          className="p-3 rounded-full bg-white/10 hover:bg-[#c29b62] text-white border border-white/20 hover:border-[#c29b62] transition-all backdrop-blur-sm pointer-events-auto"
           aria-label="Previous image"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
         <button 
           onClick={nextSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-orange-500 text-white border border-white/20 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+          className="p-3 rounded-full bg-white/10 hover:bg-[#c29b62] text-white border border-white/20 hover:border-[#c29b62] transition-all backdrop-blur-sm pointer-events-auto"
           aria-label="Next image"
         >
           <ChevronRight className="w-6 h-6" />

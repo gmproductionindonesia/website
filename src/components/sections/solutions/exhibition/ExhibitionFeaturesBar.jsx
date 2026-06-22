@@ -22,7 +22,7 @@ export default function ExhibitionFeaturesBar() {
               className="flex items-center justify-center gap-3 w-full md:w-1/3 py-4 md:py-0"
             >
               <div className="w-4 h-4 rounded-full bg-slate-100 border-2 border-slate-800 flex items-center justify-center">
-                <div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-[#c29b62]"></div>
               </div>
               <span className="font-black text-slate-800 tracking-[0.15em] text-xs sm:text-sm uppercase">
                 {feature}

@@ -92,9 +92,9 @@ export default function SolutionHero({ data }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-bold uppercase tracking-widest mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c29b62]/10 border border-[#c29b62]/20 text-[#c29b62] text-sm font-bold uppercase tracking-widest mb-6"
           >
-            <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            <span className="w-2 h-2 rounded-full bg-[#c29b62] animate-pulse"></span>
             Solution
           </motion.div>
 
@@ -123,14 +123,14 @@ export default function SolutionHero({ data }) {
         <div className="absolute inset-0 z-20 flex items-center justify-between px-4 md:px-8 pointer-events-none">
           <button 
             onClick={prevSlide}
-            className="p-3 rounded-full bg-zinc-900/50 hover:bg-orange-500 text-white border border-zinc-700 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+            className="p-3 rounded-full bg-zinc-900/50 hover:bg-[#c29b62] text-white border border-zinc-700 hover:border-[#c29b62] transition-all backdrop-blur-sm pointer-events-auto"
             aria-label="Previous image"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button 
             onClick={nextSlide}
-            className="p-3 rounded-full bg-zinc-900/50 hover:bg-orange-500 text-white border border-zinc-700 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+            className="p-3 rounded-full bg-zinc-900/50 hover:bg-[#c29b62] text-white border border-zinc-700 hover:border-[#c29b62] transition-all backdrop-blur-sm pointer-events-auto"
             aria-label="Next image"
           >
             <ChevronRight className="w-6 h-6" />

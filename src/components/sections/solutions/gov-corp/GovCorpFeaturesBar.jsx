@@ -21,8 +21,8 @@ export default function GovCorpFeaturesBar() {
               transition={{ duration: 0.5, delay: 0.3 + (idx * 0.1) }}
               className="flex items-center justify-center gap-3 w-full md:w-1/3 py-4 md:py-0"
             >
-              <div className="w-4 h-4 rounded-full bg-orange-100 border-2 border-orange-400 flex items-center justify-center">
-                <div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div>
+              <div className="w-4 h-4 rounded-full bg-orange-100 border-2 border-[#c29b62] flex items-center justify-center">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#c29b62]"></div>
               </div>
               <span className="font-bold text-slate-800 tracking-wider text-xs sm:text-sm">
                 {feature}

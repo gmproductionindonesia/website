@@ -81,7 +81,7 @@ export default function Clients() {
               href="#live-chat"
               className="inline-flex items-center gap-3 bg-[#c29b62] hover:bg-[#a88654] text-white px-8 py-4 rounded-full font-bold transition-all hover:scale-105 duration-300"
             >
-              Hubungi Tim Produksi Kami
+              Konsultasi Sekarang
             </a>
           </div>
         </motion.div>

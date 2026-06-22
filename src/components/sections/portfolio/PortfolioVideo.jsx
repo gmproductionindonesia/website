@@ -32,9 +32,9 @@ export default function PortfolioVideo() {
           className="text-center mb-8 md:mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-            Laser Show
+            Creative Show Highlight
           </h2>
-          <div className="h-1 w-20 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+          <div className="h-1 w-20 bg-[#c29b62] mx-auto mt-4 rounded-full"></div>
         </motion.div>
 
         <motion.div
@@ -54,7 +54,7 @@ export default function PortfolioVideo() {
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
-          
+
           {/* Play Button */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-20 h-20 md:w-24 md:h-24 bg-red-600 rounded-full flex items-center justify-center shadow-2xl transform transition-transform duration-300 group-hover:scale-110">

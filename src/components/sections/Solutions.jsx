@@ -42,7 +42,7 @@ export default function Solutions() {
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-[#c29b62]/10 blur-[100px] rounded-full"></div>
-        <div className="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-orange-500/5 blur-[100px] rounded-full"></div>
+        <div className="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-[#c29b62]/5 blur-[100px] rounded-full"></div>
       </div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-6 lg:px-8">
@@ -107,7 +107,7 @@ export default function Solutions() {
               </p>
               
               <a 
-                href="#" 
+                href="#live-chat" 
                 className="mt-auto inline-flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#c29b62] transition-all w-fit"
               >
                 <span className="relative overflow-hidden">

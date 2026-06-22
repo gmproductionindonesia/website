@@ -8,17 +8,17 @@ export default function EoValue() {
     {
       title: "Strategi & Eksekusi Terukur",
       description: "Kami bukan sekadar pelaksana teknis, melainkan konsultan strategis Anda. Mulai dari perencanaan konseptual, manajemen acara, hingga pelaporan akhir (event report), kami memastikan setiap detail dirancang secara komprehensif untuk mencapai KPI dan objektif bisnis perusahaan Anda.",
-      icon: <LineChart size={32} className="text-orange-500" />
+      icon: <LineChart size={32} className="text-[#c29b62]" />
     },
     {
       title: "Mitigasi Risiko & Beban Operasional",
       description: "Setiap event berskala besar memiliki blind spots dan risiko tak terduga. Kami mengambil alih tanggung jawab penuh serta menanggung fixed cost operasional, sehingga Anda dapat menghemat aset paling berharga: waktu, energi, dan pikiran, agar Anda dapat berfokus pada inti bisnis Anda.",
-      icon: <ShieldCheck size={32} className="text-orange-500" />
+      icon: <ShieldCheck size={32} className="text-[#c29b62]" />
     },
     {
       title: "Stabilitas Finansial & Legalitas",
       description: "Kami menjembatani kompleksitas arus kas melalui permodalan talangan ke pihak ketiga, memberikan keleluasaan termin pembayaran (hingga 60 hari) untuk klien. Layanan kami juga mencakup kepatuhan administrasi perpajakan (PPH 21, 23) serta penerbitan E-faktur di awal.",
-      icon: <Landmark size={32} className="text-orange-500" />
+      icon: <Landmark size={32} className="text-[#c29b62]" />
     }
   ];
 
@@ -33,7 +33,7 @@ export default function EoValue() {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold mb-6 text-slate-900 dark:text-white leading-tight"
           >
-            Mengapa Bisnis Anda Membutuhkan <span className="text-orange-500">Event Organizer Profesional?</span>
+            Mengapa Bisnis Anda Membutuhkan <span className="text-[#c29b62]">Event Organizer Profesional?</span>
           </motion.h2>
         </div>
 

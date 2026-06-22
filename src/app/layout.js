@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "GM Production | EO Jogja | Event Organizer MICE & Rental Equipment",
-  description: "GM Production Indonesia adalah Event Organizer berpengalaman & terpercaya lebih dari 25 tahun, melayani Corporate Event, Exhibition, Concert & Rental Equipment. Berbasis di Yogyakarta.",
+  title: "EO Jogja - GM Production Indonesia - MICE - Event Organizer",
+  description: "GM Production Indonesia Event Organizer MICE, berpengalaman menangani event corporate, BUMN, dan event multinasional. Equipment Rental, Sound System, Lighting",
   keywords: "Event Organizer, EO Jogja, GMPro, GM Production Indonesia, Corporate Event, Konser, Exhibition",
   icons: {
     icon: "/images/web.png",
@@ -21,8 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="id" className={`${inter.variable} scroll-smooth`}>
-      <body className="antialiased min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white flex flex-col">
-        {children}
+      <head>
         {/* Start of SleekFlow Embed Code */}
         <Script
           src="https://slceasprodbe932739.z7.web.core.windows.net/widget.js"
@@ -30,12 +29,15 @@ export default function RootLayout({ children }) {
           data-location="southeastasia"
           data-widgetid="78fd3860-1b0a-46b2-9112-21cff4a91124"
           type="module"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         {/* End of SleekFlow Embed Code */}
+      </head>
+      <body className="antialiased min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white flex flex-col">
+        {children}
         <Script
           id="sleekflow-click-handler"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               if (typeof window !== 'undefined') {
@@ -43,24 +45,52 @@ export default function RootLayout({ children }) {
                   const target = e.target.closest('a[href="#live-chat"]');
                   if (target) {
                     e.preventDefault();
-                    // Attempt to open SleekFlow widget using common API or trigger button
+                    
+                    // Attempt 1: Global APIs
                     if (window.SleekFlow && typeof window.SleekFlow.open === 'function') {
                       window.SleekFlow.open();
-                    } else if (window.sleekflow && typeof window.sleekflow.open === 'function') {
+                      return;
+                    } 
+                    if (window.sleekflow && typeof window.sleekflow.open === 'function') {
                       window.sleekflow.open();
-                    } else {
-                      // Attempt to click the widget button if API is unavailable
-                      const widgetBtn = document.querySelector('.sleekflow-launcher, #sleekflow-widget, iframe[src*="sleekflow"]');
-                      if (widgetBtn) {
-                        widgetBtn.click();
-                        // Also try posting message if it's an iframe
-                        if (widgetBtn.tagName === 'IFRAME') {
-                          widgetBtn.contentWindow.postMessage('open', '*');
+                      return;
+                    }
+                    
+                    // Attempt 2: Find DOM elements including shadow roots
+                    let clicked = false;
+                    const elements = document.querySelectorAll('sleekflow-widget, [id*="sleekflow"], [class*="sleekflow"], iframe[src*="sleekflow"]');
+                    
+                    for (let el of elements) {
+                      if (el.tagName === 'SCRIPT' || el.tagName === 'LINK') continue;
+                      
+                      // Check inside shadow root if it exists
+                      if (el.shadowRoot) {
+                        const shadowBtn = el.shadowRoot.querySelector('button, [role="button"], [class*="launcher"], [class*="button"]');
+                        if (shadowBtn) {
+                          shadowBtn.click();
+                          clicked = true;
+                          break;
                         }
-                      } else {
-                        // Fallback alert
-                        alert("Widget Live Chat sedang memuat atau terblokir. Silakan pastikan widget muncul di pojok kanan bawah.");
                       }
+                      
+                      // Try clicking the element itself
+                      if (el.click) {
+                        el.click();
+                        clicked = true;
+                        break;
+                      }
+                      
+                      // If it's an iframe, try postMessage
+                      if (el.tagName === 'IFRAME') {
+                        el.contentWindow.postMessage('open', '*');
+                        clicked = true;
+                        break;
+                      }
+                    }
+                    
+                    if (!clicked) {
+                      console.warn('Sleekflow widget not found or not fully loaded yet.');
+                      // Optional: Fallback to a direct link if you have one, or just do nothing (avoids the alert error)
                     }
                   }
                 });

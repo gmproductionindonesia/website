@@ -30,7 +30,7 @@ export default function GovCorpDeliverables() {
     <section className="py-24 bg-slate-900">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="max-w-3xl mb-16">
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             What We Deliver
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-6">
@@ -53,7 +53,7 @@ export default function GovCorpDeliverables() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="p-8 hover:bg-white/5 transition-colors group"
             >
-              <div className="w-8 h-1 bg-orange-500 mb-6 transition-all duration-300 group-hover:w-12"></div>
+              <div className="w-8 h-1 bg-[#c29b62] mb-6 transition-all duration-300 group-hover:w-12"></div>
               <h3 className="text-xl font-bold text-white mb-4 tracking-tight leading-snug">
                 {item.title}
               </h3>

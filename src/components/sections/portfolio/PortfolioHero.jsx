@@ -80,7 +80,7 @@ export default function PortfolioHero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-6"
           >
-            <span className="inline-block px-5 py-2 rounded-full border border-orange-500/30 bg-orange-500/10 backdrop-blur-md text-orange-400 text-sm font-semibold tracking-widest uppercase shadow-xl">
+            <span className="inline-block px-5 py-2 rounded-full border border-[#c29b62]/30 bg-[#c29b62]/10 backdrop-blur-md text-[#c29b62] text-sm font-semibold tracking-widest uppercase shadow-xl">
               Our Track Record
             </span>
           </motion.div>
@@ -92,7 +92,7 @@ export default function PortfolioHero() {
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-6"
           >
             Proven Experience. <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#c29b62] to-amber-300">
               Impeccable Execution.
             </span>
           </motion.h1>

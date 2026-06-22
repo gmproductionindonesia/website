@@ -35,7 +35,7 @@ export default function ExhibitionApproach() {
     <section className="py-24 bg-[#F8FAFC]">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="text-center mb-16">
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             Our Approach
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">

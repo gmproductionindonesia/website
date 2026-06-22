@@ -24,7 +24,7 @@ export default function CreativeCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-6 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-6 block">
             Let's Collaborate
           </span>
           
@@ -38,7 +38,7 @@ export default function CreativeCTA() {
 
           <Link 
             href="#live-chat"
-            className="inline-flex items-center justify-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-[0_0_20px_rgba(249,115,22,0.3)] group"
+            className="inline-flex items-center justify-center gap-3 bg-[#c29b62] hover:bg-[#a88654] text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-[0_0_20px_rgba(249,115,22,0.3)] group"
           >
             Hubungi Kami
             <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />

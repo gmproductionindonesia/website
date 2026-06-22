@@ -56,8 +56,12 @@ export default function IsoCertified() {
   }, [selectedIndex]);
 
   return (
-    <section className="py-20 bg-slate-800 dark:bg-slate-900 border-y border-slate-700 dark:border-slate-800">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+    <section 
+      className="py-20 relative bg-cover bg-center bg-no-repeat bg-fixed border-y border-slate-700 dark:border-slate-800"
+      style={{ backgroundImage: "url('/images/goverment/4.JPG')" }}
+    >
+      <div className="absolute inset-0 bg-black/70 z-0"></div>
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col p-4 md:p-8 gap-10">
           <motion.div
             initial={{ opacity: 0, y: -20 }}

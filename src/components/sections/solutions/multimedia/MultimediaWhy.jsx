@@ -6,22 +6,22 @@ import { MonitorPlay, RadioReceiver, Video, Cpu } from "lucide-react";
 export default function MultimediaWhy() {
   const reasons = [
     {
-      icon: <MonitorPlay className="text-orange-500 mb-6" size={32} />,
+      icon: <MonitorPlay className="text-[#c29b62] mb-6" size={32} />,
       title: "Dukungan Multimedia yang Profesional",
       desc: "Visual, audio, dan multimedia production yang dirancang untuk mendukung kualitas event secara maksimal."
     },
     {
-      icon: <Cpu className="text-orange-500 mb-6" size={32} />,
+      icon: <Cpu className="text-[#c29b62] mb-6" size={32} />,
       title: "Technical Workflow yang Terstruktur",
       desc: "Didukung koordinasi technical production yang lebih detail dan terukur."
     },
     {
-      icon: <RadioReceiver className="text-orange-500 mb-6" size={32} />,
+      icon: <RadioReceiver className="text-[#c29b62] mb-6" size={32} />,
       title: "Equipment & Operational Support yang Lengkap",
       desc: "LED screen, lighting, sound system, multimedia system, hingga technical operator dalam satu koordinasi produksi."
     },
     {
-      icon: <Video className="text-orange-500 mb-6" size={32} />,
+      icon: <Video className="text-[#c29b62] mb-6" size={32} />,
       title: "Tim Technical yang Responsif & Adaptif",
       desc: "Koordinasi cepat dan fleksibel sesuai kebutuhan venue maupun jalannya event."
     }
@@ -31,7 +31,7 @@ export default function MultimediaWhy() {
     <section className="py-24 bg-white border-t border-slate-100">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="text-center mb-16 max-w-4xl mx-auto">
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             Why GM Production
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
@@ -49,7 +49,7 @@ export default function MultimediaWhy() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="p-8 md:p-10 hover:bg-white hover:shadow-lg transition-all"
             >
-              <div className="w-14 h-14 rounded-full border border-orange-200 flex items-center justify-center bg-orange-50 mb-6 shadow-sm">
+              <div className="w-14 h-14 rounded-full border border-orange-200 flex items-center justify-center bg-[#c29b62]/10 mb-6 shadow-sm">
                 {reason.icon}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4 leading-snug">

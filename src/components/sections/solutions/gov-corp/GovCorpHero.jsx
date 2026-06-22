@@ -89,7 +89,7 @@ export default function GovCorpHero() {
           >
             <Link 
               href="#live-chat"
-              className="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-1 group"
+              className="inline-flex items-center gap-3 bg-[#c29b62] hover:bg-[#a88654] text-white font-bold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#c29b62]/30 hover:-translate-y-1 group"
             >
               Konsultasi Sekarang
               <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />
@@ -102,14 +102,14 @@ export default function GovCorpHero() {
       <div className="absolute inset-0 z-20 flex items-center justify-between px-4 md:px-8 pointer-events-none">
         <button 
           onClick={prevSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-orange-500 text-white border border-white/20 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+          className="p-3 rounded-full bg-white/10 hover:bg-[#c29b62] text-white border border-white/20 hover:border-[#c29b62] transition-all backdrop-blur-sm pointer-events-auto"
           aria-label="Previous image"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
         <button 
           onClick={nextSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-orange-500 text-white border border-white/20 hover:border-orange-500 transition-all backdrop-blur-sm pointer-events-auto"
+          className="p-3 rounded-full bg-white/10 hover:bg-[#c29b62] text-white border border-white/20 hover:border-[#c29b62] transition-all backdrop-blur-sm pointer-events-auto"
           aria-label="Next image"
         >
           <ChevronRight className="w-6 h-6" />

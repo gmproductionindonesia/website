@@ -24,7 +24,7 @@ export default function MultimediaCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-6 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-6 block">
             Let's Collaborate
           </span>
           

@@ -21,7 +21,7 @@ export default function ExhibitionSplit() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent opacity-50"></div>
               
               {/* Decorative Elements */}
-              <div className="absolute top-8 left-8 w-24 h-24 border-t-4 border-l-4 border-orange-500 opacity-90 rounded-tl-3xl"></div>
+              <div className="absolute top-8 left-8 w-24 h-24 border-t-4 border-l-4 border-[#c29b62] opacity-90 rounded-tl-3xl"></div>
               <div className="absolute bottom-8 right-8 w-24 h-24 border-b-4 border-r-4 border-white opacity-90 rounded-br-3xl"></div>
             </div>
           </motion.div>
@@ -34,11 +34,11 @@ export default function ExhibitionSplit() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="w-full lg:w-1/2"
           >
-            <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+            <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
               Exhibition & Brand Activation
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-8 tracking-tight">
-              Brand Experience yang Menarik <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Membutuhkan Aktivasi yang Tepat</span>
+              Brand Experience yang Menarik <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#c29b62] to-[#a88654]">Membutuhkan Aktivasi yang Tepat</span>
             </h2>
             
             <div className="space-y-6 text-lg text-slate-600 font-light leading-relaxed">

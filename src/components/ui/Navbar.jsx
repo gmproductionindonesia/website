@@ -58,7 +58,7 @@ export default function Navbar() {
             alt="GM Production Logo" 
             width={240} 
             height={80} 
-            className="h-12 md:h-14 w-auto object-contain" 
+            className="w-36 md:w-44 h-auto object-contain" 
             priority
           />
         </Link>
@@ -81,7 +81,7 @@ export default function Navbar() {
                   <ChevronDown 
                     size={16} 
                     className={`mt-0.5 transition-transform duration-300 ease-out ${
-                      activeDropdown === link.name ? "rotate-180 text-orange-400" : "text-white/60"
+                      activeDropdown === link.name ? "rotate-180 text-[#c29b62]" : "text-white/60"
                     }`} 
                   />
                 )}
@@ -108,7 +108,7 @@ export default function Navbar() {
                         <Link
                           key={item.name}
                           href={item.href}
-                          className="px-5 py-4 text-[15px] font-medium hover:bg-white/60 hover:text-orange-600 rounded-2xl transition-all duration-300 group/item flex items-center relative"
+                          className="px-5 py-4 text-[15px] font-medium hover:bg-white/60 hover:text-[#a88654] rounded-2xl transition-all duration-300 group/item flex items-center relative"
                         >
                           <span className="relative z-10 transition-transform duration-300 group-hover/item:translate-x-1.5">
                             {item.name}
@@ -172,7 +172,7 @@ export default function Navbar() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="text-white/60 text-sm py-2.5 hover:text-white transition-colors flex items-center before:content-[''] before:w-1.5 before:h-1.5 before:bg-white/20 before:rounded-full before:mr-3 hover:before:bg-orange-500"
+                          className="text-white/60 text-sm py-2.5 hover:text-white transition-colors flex items-center before:content-[''] before:w-1.5 before:h-1.5 before:bg-white/20 before:rounded-full before:mr-3 hover:before:bg-[#c29b62]"
                         >
                           {item.name}
                         </Link>

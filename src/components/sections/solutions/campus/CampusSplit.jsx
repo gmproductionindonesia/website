@@ -21,8 +21,8 @@ export default function CampusSplit() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
               
               {/* Decorative Elements */}
-              <div className="absolute top-8 left-8 w-24 h-24 border-t-2 border-l-2 border-orange-400 opacity-50 rounded-tl-3xl"></div>
-              <div className="absolute bottom-8 right-8 w-24 h-24 border-b-2 border-r-2 border-orange-400 opacity-50 rounded-br-3xl"></div>
+              <div className="absolute top-8 left-8 w-24 h-24 border-t-2 border-l-2 border-[#c29b62] opacity-50 rounded-tl-3xl"></div>
+              <div className="absolute bottom-8 right-8 w-24 h-24 border-b-2 border-r-2 border-[#c29b62] opacity-50 rounded-br-3xl"></div>
             </div>
           </motion.div>
 

@@ -52,7 +52,7 @@ export default function GovCorpServices() {
     <section className="py-24 bg-[#FDF8EE]">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="text-center mb-16">
-          <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-[#c29b62] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             What We Handle
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
@@ -70,7 +70,7 @@ export default function GovCorpServices() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-xl shadow-slate-200/50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-full border-2 border-orange-500 flex items-center justify-center text-orange-500 font-black text-lg mb-6">
+              <div className="w-12 h-12 rounded-full border-2 border-[#c29b62] flex items-center justify-center text-[#c29b62] font-black text-lg mb-6">
                 {svc.number}
               </div>
               <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">
@@ -82,7 +82,7 @@ export default function GovCorpServices() {
               <ul className="space-y-3">
                 {svc.list.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-slate-600 text-sm font-medium">
-                    <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-1.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#c29b62] mt-1.5 shrink-0"></span>
                     {item}
                   </li>
                 ))}

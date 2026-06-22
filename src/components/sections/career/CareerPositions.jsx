@@ -60,7 +60,7 @@ export default function CareerPositions() {
                     transition={{ duration: 0.4, delay: idx * 0.1 }}
                     className="group border-b border-white/10"
                   >
-                    <a href="#" className="flex flex-col md:flex-row md:items-center justify-between py-6 px-4 hover:bg-white/[0.03] transition-all duration-300 rounded-xl my-2">
+                    <a href="#live-chat" className="flex flex-col md:flex-row md:items-center justify-between py-6 px-4 hover:bg-white/[0.03] transition-all duration-300 rounded-xl my-2">
                       <div className="flex-1 mb-4 md:mb-0">
                         <h4 className="text-xl md:text-2xl font-semibold text-white group-hover:text-emerald-400 transition-colors duration-300 tracking-tight mb-2">
                           {job.title}
@@ -88,7 +88,7 @@ export default function CareerPositions() {
         <div className="mt-20 p-8 rounded-3xl bg-gradient-to-br from-emerald-900/20 to-[#020202] border border-emerald-500/20 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">Belum Menemukan Posisi yang Tepat?</h3>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto font-light">Kami selalu mencari talenta-talenta luar biasa untuk bergabung bersama kami. Kirimkan CV dan Portofolio Anda melalui Open Application.</p>
-          <a href="mailto:hr@gmpro.id" className="inline-flex px-8 py-4 bg-white hover:bg-emerald-500 text-black hover:text-white font-semibold rounded-full transition-colors duration-300 shadow-lg">
+          <a href="#live-chat" className="inline-flex px-8 py-4 bg-white hover:bg-emerald-500 text-black hover:text-white font-semibold rounded-full transition-colors duration-300 shadow-lg">
             Kirim Open Application
           </a>
         </div>
