@@ -22,22 +22,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id" className={`${inter.variable} scroll-smooth`}>
       <head>
+      </head>
+      <body className="antialiased min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white flex flex-col">
+        {children}
         {/* Start of SleekFlow Embed Code */}
         <Script
+          id="sleekflow-widget"
           src="https://slceasprodbe932739.z7.web.core.windows.net/widget.js"
           data-companyid="f7a52be7-02af-4bfa-8828-193dc5b89687"
           data-location="southeastasia"
           data-widgetid="78fd3860-1b0a-46b2-9112-21cff4a91124"
           type="module"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
         {/* End of SleekFlow Embed Code */}
-      </head>
-      <body className="antialiased min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white flex flex-col">
-        {children}
         <Script
           id="sleekflow-click-handler"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               if (typeof window !== 'undefined') {
