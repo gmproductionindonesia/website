@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,46 +19,61 @@ const heroImages = [
   "/images/hero/10.jpg",
 ];
 
+const SLIDE_INTERVAL = 3000;
+
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const timerRef = useRef(null);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
+  const startTimer = useCallback(() => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 3000);
-    return () => clearInterval(timer);
+    }, SLIDE_INTERVAL);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-  };
+  useEffect(() => {
+    startTimer();
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [startTimer]);
 
-  const prevSlide = () => {
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    startTimer();
+  }, [startTimer]);
+
+  const prevSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
-  };
+    startTimer();
+  }, [startTimer]);
 
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-12">
-      {/* Background Image Slider & Overlay */}
+      {/* Background Image Slider — Pure CSS transition on GPU compositor */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((src, index) => (
-          <motion.div
+          <div
             key={src}
-            initial={{ opacity: index === 0 ? 1 : 0 }}
-            animate={{ opacity: index === currentSlide ? 1 : 0 }}
-            transition={{ duration: 1 }}
             className="absolute inset-0 w-full h-full"
+            style={{
+              opacity: index === currentSlide ? 1 : 0,
+              transition: "opacity 1s ease-in-out",
+              willChange: "opacity",
+            }}
           >
             <Image
               src={src}
               alt={`Hero Event ${index + 1}`}
               fill
               sizes="100vw"
-              priority={index === 0}
+              priority={index < 3}
+              loading="eager"
               quality={75}
               className="object-cover object-center"
             />
-          </motion.div>
+          </div>
         ))}
       </div>
       <div className="absolute inset-0 z-10 bg-slate-900/80" />
@@ -130,3 +145,4 @@ export default function Hero() {
     </section>
   );
 }
+
