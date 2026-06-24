@@ -6,6 +6,7 @@ import { solutionsContent } from "@/data/solutionsContent";
 import SolutionHero from "@/components/sections/solutions/SolutionHero";
 import SolutionFeatures from "@/components/sections/solutions/SolutionFeatures";
 import SolutionPortfolio from "@/components/sections/solutions/SolutionPortfolio";
+import ClientMarquee from "@/components/sections/ClientMarquee";
 
 // Custom Gov & Corp Components
 import GovCorpHero from "@/components/sections/solutions/gov-corp/GovCorpHero";
@@ -115,6 +116,7 @@ export default async function SolutionPage({ params }) {
       <main className="bg-slate-50 min-h-screen">
         <Navbar />
         <GovCorpHero />
+        <ClientMarquee />
         <GovCorpFeaturesBar />
         <GovCorpStats />
         <GovCorpSplit />
@@ -135,6 +137,7 @@ export default async function SolutionPage({ params }) {
       <main className="bg-slate-50 min-h-screen">
         <Navbar />
         <CampusHero />
+        <ClientMarquee />
         <CampusFeaturesBar />
         <CampusStats />
         <CampusSplit />
@@ -155,6 +158,7 @@ export default async function SolutionPage({ params }) {
       <main className="bg-slate-50 min-h-screen">
         <Navbar />
         <CreativeHero />
+        <ClientMarquee />
         <CreativeFeaturesBar />
         <CreativeStats />
         <CreativeSplit />
@@ -175,6 +179,7 @@ export default async function SolutionPage({ params }) {
       <main className="bg-white min-h-screen">
         <Navbar />
         <ConcertHero />
+        <ClientMarquee />
         <ConcertFeaturesBar />
         <ConcertStats />
         <ConcertSplit />
@@ -195,6 +200,7 @@ export default async function SolutionPage({ params }) {
       <main className="bg-white min-h-screen">
         <Navbar />
         <MultimediaHero />
+        <ClientMarquee />
         <MultimediaFeaturesBar />
         <MultimediaStats />
         <MultimediaSplit />
@@ -215,6 +221,7 @@ export default async function SolutionPage({ params }) {
       <main className="bg-white min-h-screen">
         <Navbar />
         <ExhibitionHero />
+        <ClientMarquee />
         <ExhibitionFeaturesBar />
         <ExhibitionStats />
         <ExhibitionSplit />
@@ -234,6 +241,7 @@ export default async function SolutionPage({ params }) {
     <main className="bg-black min-h-screen">
       <Navbar />
       <SolutionHero data={data} />
+      <ClientMarquee />
       <SolutionFeatures badges={data.badges} />
       <SolutionPortfolio categoryName={data.title} />
       <Footer />

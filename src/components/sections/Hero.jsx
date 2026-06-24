@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const heroImages = [
@@ -39,17 +40,27 @@ export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-12">
       {/* Background Image Slider & Overlay */}
-      <AnimatePresence>
-        <motion.div
-          key={currentSlide}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('${heroImages[currentSlide]}')` }}
-        />
-      </AnimatePresence>
+      <div className="absolute inset-0 z-0">
+        {heroImages.map((src, index) => (
+          <motion.div
+            key={src}
+            initial={{ opacity: index === 0 ? 1 : 0 }}
+            animate={{ opacity: index === currentSlide ? 1 : 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 w-full h-full"
+          >
+            <Image
+              src={src}
+              alt={`Hero Event ${index + 1}`}
+              fill
+              sizes="100vw"
+              priority={index === 0}
+              quality={75}
+              className="object-cover object-center"
+            />
+          </motion.div>
+        ))}
+      </div>
       <div className="absolute inset-0 z-10 bg-slate-900/80" />
 
       {/* Slider Navigation Arrows */}

@@ -4,6 +4,7 @@ import TawkToChat from "@/components/ui/TawkToChat";
 import PortfolioHero from "@/components/sections/portfolio/PortfolioHero";
 import PortfolioVideo from "@/components/sections/portfolio/PortfolioVideo";
 import PortfolioGallery from "@/components/sections/portfolio/PortfolioGallery";
+import ClientMarquee from "@/components/sections/ClientMarquee";
 
 export const metadata = {
   title: "Portfolio & Track Record | GM Production Indonesia",
@@ -30,6 +31,7 @@ export default function PortfolioPage() {
     <main className="bg-black min-h-screen">
       <Navbar />
       <PortfolioHero />
+      <ClientMarquee />
       <PortfolioVideo />
       <PortfolioGallery />
       <Footer />
