@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: "Portfolio & Track Record | GM Production Indonesia",
     description: "Jelajahi rekam jejak mahakarya GM Production dalam menangani berbagai event berskala nasional.",
-    url: "https://gmpro.id/portfolio",
+    url: "https://gmpro.id/eo-jakarta",
     type: "website",
     images: [
       {

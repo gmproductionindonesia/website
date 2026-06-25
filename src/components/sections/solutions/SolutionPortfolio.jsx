@@ -25,7 +25,7 @@ export default function SolutionPortfolio({ categoryName }) {
             <div className="h-1 w-20 bg-[#c29b62] mt-4 rounded-full"></div>
           </div>
           <Link 
-            href="/portfolio"
+            href="/eo-jakarta"
             className="inline-flex items-center gap-2 text-[#c29b62] hover:text-[#c29b62] font-medium transition-colors group"
           >
             View All Portfolio

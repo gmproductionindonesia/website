@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: "News & Insight | GM Production Indonesia",
     description: "Kumpulan artikel dan panduan kritis dari pakar Event Organizer. Pelajari rahasia sukses acara berskala nasional.",
-    url: "https://gmpro.id/news",
+    url: "https://gmpro.id/harga-paket-eo",
     type: "website",
     images: [
       {

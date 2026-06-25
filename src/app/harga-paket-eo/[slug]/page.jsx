@@ -66,7 +66,7 @@ export default function SingleNewsPage({ params }) {
       <article className="flex-grow pt-32 pb-24">
         <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-4xl">
           
-          <Link href="/news" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-8 text-sm font-semibold uppercase tracking-wider">
+          <Link href="/harga-paket-eo" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-8 text-sm font-semibold uppercase tracking-wider">
             <ArrowLeft size={16} /> Kembali ke News & Insight
           </Link>
 

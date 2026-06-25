@@ -24,22 +24,22 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "About", href: "/eo-jogja" },
     { 
       name: "Solution", 
       href: "#",
       dropdown: [
-        { name: "Government & Corporate Event Solutions", href: "/solutions/government-corporate" },
-        { name: "Campus & Institutional Event Solutions", href: "/solutions/campus-institutional" },
+        { name: "Government & Corporate Event Solutions", href: "/corporate-event-organizer" },
+        { name: "Campus & Institutional Event Solutions", href: "/jasa-event-organizer-kampus" },
         { name: "Creative & Show Management Solutions", href: "/solutions/creative-show-management" },
-        { name: "Concert & Entertainment Production Solutions", href: "/solutions/concert-entertainment" },
-        { name: "Multimedia & Technical Production Solutions", href: "/solutions/multimedia-technical" },
-        { name: "Exhibition & Brand Activation Solutions", href: "/solutions/exhibition-brand-activation" },
+        { name: "Concert & Entertainment Production Solutions", href: "/jasa-eo-musik" },
+        { name: "Multimedia & Technical Production Solutions", href: "/jasa-sewa-sound-system-led-lightning" },
+        { name: "Exhibition & Brand Activation Solutions", href: "/jasa-event-organizer-mice" },
       ]
     },
-    { name: "Portfolio", href: "/portfolio" },
+    { name: "Portfolio", href: "/eo-jakarta" },
     { name: "Career", href: "/career" },
-    { name: "News & Insights", href: "/news" },
+    { name: "News & Insights", href: "/harga-paket-eo" },
   ];
 
   return (
