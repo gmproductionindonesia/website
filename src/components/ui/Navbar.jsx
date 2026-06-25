@@ -24,7 +24,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/eo-jogja" },
+    { name: "About", href: "/eojogja" },
     { 
       name: "Solution", 
       href: "#",
@@ -37,7 +37,7 @@ export default function Navbar() {
         { name: "Exhibition & Brand Activation Solutions", href: "/jasa-event-organizer-mice" },
       ]
     },
-    { name: "Portfolio", href: "/eo-jakarta" },
+    { name: "Portfolio", href: "/eojakarta" },
     { name: "Career", href: "/career" },
     { name: "News & Insights", href: "/harga-paket-eo" },
   ];

@@ -15,8 +15,9 @@ export function generateStaticParams() {
 }
 
 // Generate dynamic metadata for extreme SEO optimization
-export function generateMetadata({ params }) {
-  const post = newsContent.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = newsContent.find((p) => p.slug === slug);
   
   if (!post) {
     return {
@@ -52,8 +53,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function SingleNewsPage({ params }) {
-  const post = newsContent.find((p) => p.slug === params.slug);
+export default async function SingleNewsPage({ params }) {
+  const { slug } = await params;
+  const post = newsContent.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -97,7 +99,7 @@ export default function SingleNewsPage({ params }) {
 
           {/* Article Content */}
           <div 
-            className="prose prose-invert prose-emerald max-w-none prose-headings:font-bold prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-12 prose-h3:text-2xl prose-h3:text-emerald-400 prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg prose-a:text-emerald-400 hover:prose-a:text-emerald-300 prose-strong:text-white prose-li:text-gray-300"
+            className="text-white [&_p]:text-white [&_p]:text-lg [&_p]:leading-relaxed [&_p]:mb-6 [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mb-6 [&_h2]:mt-12 [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:text-emerald-400 [&_h3]:mb-4 [&_h3]:mt-8 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-6 [&_li]:text-white [&_li]:text-lg [&_li]:mb-2 [&_strong]:text-white [&_strong]:font-bold [&_em]:text-white [&_a]:text-emerald-400"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
