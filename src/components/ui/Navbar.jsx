@@ -31,7 +31,7 @@ export default function Navbar() {
       dropdown: [
         { name: "Government & Corporate Event Solutions", href: "/corporate-event-organizer" },
         { name: "Campus & Institutional Event Solutions", href: "/jasa-event-organizer-kampus" },
-        { name: "Creative & Show Management Solutions", href: "/solutions/creative-show-management" },
+        { name: "Creative & Show Management Solutions", href: "/event-management" },
         { name: "Concert & Entertainment Production Solutions", href: "/jasa-eo-musik" },
         { name: "Multimedia & Technical Production Solutions", href: "/jasa-sewa-sound-system-led-lightning" },
         { name: "Exhibition & Brand Activation Solutions", href: "/jasa-event-organizer-mice" },
