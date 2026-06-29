@@ -39,7 +39,7 @@ export default function Navbar() {
     },
     { name: "Portfolio", href: "/eojakarta" },
     { name: "Career", href: "/career" },
-    { name: "News & Insights", href: "/harga-paket-eo" },
+    { name: "News & Insights", href: "/jasa-eo-jakarta" },
   ];
 
   return (

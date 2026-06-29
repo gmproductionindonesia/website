@@ -46,7 +46,7 @@ export default function NewsGrid() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="group flex flex-col bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-emerald-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10"
             >
-              <Link href={`/harga-paket-eo/${item.slug}`} className="block relative h-64 overflow-hidden">
+              <Link href={`/${item.slug}`} className="block relative h-64 overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -65,7 +65,7 @@ export default function NewsGrid() {
                   <span className="flex items-center gap-1.5"><Clock size={14} /> {item.read_time}</span>
                 </div>
                 
-                <Link href={`/harga-paket-eo/${item.slug}`} className="block group-hover:text-emerald-400 transition-colors">
+                <Link href={`/${item.slug}`} className="block group-hover:text-emerald-400 transition-colors">
                   <h3 className="text-2xl font-bold text-white leading-tight mb-4 tracking-tight">
                     {item.title}
                   </h3>
@@ -76,7 +76,7 @@ export default function NewsGrid() {
                 </p>
                 
                 <Link 
-                  href={`/harga-paket-eo/${item.slug}`}
+                  href={`/${item.slug}`}
                   className="inline-flex items-center gap-2 text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition-colors mt-auto group/btn"
                 >
                   Baca Selengkapnya

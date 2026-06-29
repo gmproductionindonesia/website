@@ -2,7 +2,7 @@ export const newsContent = [
   {
     id: 1,
     type: "Blog",
-    slug: "jasa-event-organizer-jakarta-terbaik",
+    slug: "asa-event-organizer-jakarta-terbaik",
     title: "Jasa Event Organizer Jakarta Terbaik: Tren 2024, Event Hybrid & Immersive LED",
     meta_description: "Mencari jasa event organizer Jakarta terbaik untuk acara berskala nasional? Temukan bagaimana GM Production memimpin revolusi industri event 2024 melalui teknologi Immersive LED (Videotron) beresolusi tinggi dan eksekusi Event Hybrid standar broadcast televisi. Kami menghadirkan solusi end-to-end untuk corporate gathering, konser, gala dinner, dan pameran di Jakarta, Jogja, dan kota besar lainnya. Tinggalkan cara lama dengan backdrop konvensional, saatnya memukau audiens Anda dengan tata panggung spektakuler dan manajemen acara profesional terpercaya.",
     keywords: "Jasa Event Organizer Jakarta Terbaik, Event Organizer Jakarta, Event Hybrid Indonesia, Immersive LED Screen, Sewa Videotron Jakarta, Jasa EO Profesional, Videotron Konser, LED Screen Event, Jasa EO Jakarta Pusat, GM Production",
@@ -54,7 +54,7 @@ export const newsContent = [
   {
     id: 2,
     type: "Blog",
-    slug: "biaya-jasa-event-organizer-nasional",
+    slug: "sewa-lightning-jakarta",
     title: "Biaya Jasa Event Organizer Nasional: Bongkar RAB & Harga Sewa Alat Event",
     meta_description: "Ingin mengetahui rincian pasti biaya jasa event organizer nasional di Indonesia? Artikel ini membongkar secara transparan Rencana Anggaran Biaya (RAB) acara skala besar, mulai dari harga sewa sound system line array, sewa videotron LED screen, lighting panggung, panggung rigging, hingga perizinan keamanan kepolisian. Dapatkan wawasan berharga untuk menghindari vendor abal-abal yang menawarkan harga murah namun mengorbankan kualitas teknis dan keselamatan. Konsultasikan budget event korporat, pameran, dan konser Anda bersama GM Production.",
     keywords: "Biaya Jasa Event Organizer Nasional, RAB Event Nasional, Harga Jasa EO Indonesia, Vendor Event Jakarta, Budget Acara Korporat, Biaya Konser, Harga Sewa Sound System, Biaya Sewa Videotron, RAB Gala Dinner, Event Organizer Murah vs Profesional",
@@ -109,7 +109,7 @@ export const newsContent = [
   {
     id: 3,
     type: "Blog",
-    slug: "vendor-produksi-konser-festival-musik",
+    slug: "paket-tour-travel-jogja",
     title: "Vendor Produksi Konser & Festival Musik: 5 Kesalahan Fatal yang Wajib Dihindari",
     meta_description: "Sedang memilih vendor produksi konser dan festival musik di Indonesia? Jangan pertaruhkan reputasi brand Anda. Artikel ini mengungkap 5 kesalahan fatal vendor amatir—mulai dari manajemen kelistrikan genset yang overload, kabel berantakan tanpa cable protector, hingga tidak berjalannya gladi resik teknis. Pelajari standar operasional prosedur (SOP) kelas dunia dari GM Production dalam menyediakan sewa sound system line array, panggung rigging bersertifikasi K3, dan tata cahaya spektakuler untuk kesuksesan festival musik berskala nasional.",
     keywords: "Vendor Produksi Konser Festival Musik, Vendor Event Jakarta, Sewa Sound System Konser, Panggung Rigging Konser, Jasa EO Konser Musik, Manajemen Genset Event, Sound System Mati, Vendor Produksi Konser Terbaik, EO Terpercaya Indonesia, GM Production",
